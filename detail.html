@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome -->
+      <link href= 
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>DETAILS</title>
+</head>
+<body>
+   <!-- go to top button -->
+   <button type="button" class="rounded-pill" onclick="topFunction()" id="top_btn">Top</button>
+   <!-- javascript code -->
+    <script>
+     var go_top = document.getElementById("top_btn");
+     window.onscroll = function() {scrollFunction()};
+     function scrollFunction(){
+       if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+         go_top.style.display = "block";
+       }else{
+         go_top.style.display = "none";
+       }
+     }
+     function topFunction(){
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+    </script>
+   <!-- javascript code -->
+   <!-- go to top button -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <img id="logo" src="images/logo.png" alt="logo" width="100px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span id="second">COSY AIRCONDITIONERS</span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            <li class="nav-item">
+              <a class="nav-link active fw-bolder ms-2" id="white" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" id="white" href="products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="white" class="nav-link dropdown-toggle fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                BRANDS
+              </a>
+              <ul class="dropdown-menu bg-dark round-2" aria-labelledby="navbarDropdown" id="productlisting">
+                <!-- <li><a class="dropdown-item hover color" href="#">Gree</a></li>
+                <li><a class="dropdown-item color" href="#">Dawlance</a></li>
+                <li><a class="dropdown-item color" href="#">Orient</a></li>
+                <li><a class="dropdown-item color" href="#">pel</a></li>
+                <li><a class="dropdown-item color" href="#">Haier</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a id="white" class="nav-link fw-bolder" href="contactus.html"  aria-disabled="false">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a id="white" class="nav-link fw-bolder" href="about.html"  aria-disabled="false">ABOUT US</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 rounded-pill" type="search" onclick="nonborder()" placeholder="Search..." aria-label="Search" id="search_input">
+            <button id="btnsearch" class="btn fw-bolder" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  <!-- navbar end -->
+
+  <!-- detail product start -->
+ <div class="container-fluid mt-2">
+  <div class="row" id="Detail_Card">
+
+  </div>
+ </div>
+<!-- detail product start -->
+
+<!-- footer start -->
+<footer class="footer mt-5 bg-dark" style="color: white;">
+  <div class="container-fluid"> 
+   <div class="row pt-5"> 
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">About Us</h4> 
+      <p style="text-align: justify;">Welcome to Cosy Airconditioner – your trusted destination for premium air conditioning solutions.
+       We offer a wide range of top-quality,
+       energy-efficient AC units designed to keep you cool and comfortable all year round.
+       Enjoy expert advice, unbeatable prices, and reliable customer service at Cosy Airconditioner!
+      </p> 
+  </div> 
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">Contact Us</h4> 
+      <ul class="list-unstyled text-center">
+        <li>Phone: +9922-22242-0</li>
+          <li>Email: cosyairconditoners@gmail.com</li> 
+          <li>Address: E-8-6 Suite 11.11 Megan Avenue 1, 189, Jln Tun Razak, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</li> 
+      </ul> 
+  </div> 
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">Follow Us</h4> 
+      <li class="list-inline-item justify-content-center d-flex pt-3">
+      <ul class="list-inline footer-links">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/login/">
+                <i id="socialicon" class="fab fa-facebook "></i> 
+          </a> 
+                 </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://twitter.com/i/flow/login">
+                       <i id="socialicon" class="fab fa-twitter "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.instagram.com/accounts/login/?hl=en"> 
+                       <i id="socialicon" class="fab fa-instagram "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.linkedin.com/login"> 
+                       <i id="socialicon" class="fab fa-linkedin "></i>
+                   </a> 
+                 </li> 
+             </ul> 
+         </div> 
+     </div> 
+     <hr> 
+     <div class="row"> 
+         <div class="col-sm-12 col-md-12 col-lg-12 text-center"> 
+             <p>&copy; 2024 [ COSY AIR CONDITIONERS ] All Rights Reserved</p> 
+         </div> 
+         
+     </div> 
+ </div> 
+</footer>  
+         <!-- footer end -->
+
+<script>
+
+  var  url = location.href
+  var obj = new URL(url)
+
+  // creat var to search product ids name price
+
+var id = obj.searchParams.get("Product_ID")
+var name = obj.searchParams.get("Product_Name")
+var img = obj.searchParams.get("Product_Img")
+var price = obj.searchParams.get("Product_Price")
+var desc = obj.searchParams.get("desc")
+var detailcard_data = "";
+// put all data in a card to show product details
+
+detailcard_data += ` <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4 mt-4">
+                      <img src="${img}" class="card-img-top" alt="..." style="height:600px;">
+                      </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4 mt-4">
+                  <h2 class="card-title pb-2 text-center" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);">${name}</h2>
+                  <h5 class="card-text fw-bold">Rs.${price}</h5>
+                   <p class="card-text pt-5 pb-5">${desc} <span class= "fw-bold">Download details</span>.<a href="#">CLICK HERE</a></p>
+                  <a href="#" id="bookbtn" class="btn btn-dark p-3 rounded-pill fw-bold d-flex justify-content-center">ADD TO CART</a>
+                  </div> `
+                
+document.getElementById("Detail_Card").innerHTML = detailcard_data
+
+</script>
+<script src="js/bootstrap.js"></script>
+    <script src="sorces.js"></script>
+  </body>
+</html>

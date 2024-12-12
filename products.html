@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome -->
+      <link href= 
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>PRODUCTS</title>
+</head>
+<body>
+   <!-- go to top button -->
+   <button type="button" class="rounded-pill" onclick="topFunction()" id="top_btn">Top</button>
+   <!-- javascript code -->
+    <script>
+     var go_top = document.getElementById("top_btn");
+     window.onscroll = function() {scrollFunction()};
+     function scrollFunction(){
+       if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+         go_top.style.display = "block";
+       }else{
+         go_top.style.display = "none";
+       }
+     }
+     function topFunction(){
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+    </script>
+   <!-- javascript code -->
+   <!-- go to top button -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <img id="logo" src="images/logo.png" alt="logo" width="100px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span id="second">COSY AIRCONDITIONERS</span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder ms-2" id="white" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" id="white" href="products.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="white" class="nav-link dropdown-toggle fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BRANDS
+                </a>
+                <ul class="dropdown-menu bg-dark round-2" aria-labelledby="navbarDropdown" id="productlisting">
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a id="white" class="nav-link fw-bolder" href="contactus.html"  aria-disabled="false">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a id="white" class="nav-link fw-bolder" href="about.html"  aria-disabled="false">ABOUT US</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 rounded-pill" type="search" onclick="nonborder()" placeholder="Search..." aria-label="Search" id="search_input">
+              <button id="btnsearch" class="btn fw-bolder" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+    <!-- productlisting start-->
+    <section  id="gree_products">
+      <div  class="text-center fw-bolder mb-5 mt-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);letter-spacing: 20px;"><h1>GREE</h1></div>
+      <div class="container pb-3">
+      <div class="row" id="productListing_gree">  
+    </div>
+  </div>
+    </section>
+   
+   <section  id="haier_products">
+    <div  class="text-center fw-bolder mt-5 mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);letter-spacing: 20px;"><h1>HAIER</h1></div>
+      <div class="container pb-3">
+      <div class="row" id="productListing_haier">
+    </div>
+  </div>
+    </section>
+  
+   <section  id="dawlance_products">
+    <div  class="text-center fw-bolder mt-5 mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);letter-spacing: 20px;"><h1>DAWLANCE</h1></div>
+      <div class="container pb-3">
+      <div class="row" id="productListing_dawlance">
+  </div>
+  </div>
+    </section>
+   <section  id="pel_products">
+    <div  class="text-center fw-bolder mt-5 mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);letter-spacing: 20px;"><h1>PEL</h1></div>
+      <div class="container pb-3">
+      <div class="row" id="productListing_pel">
+  </div>
+  </div>
+    </section>
+   <section  id="orient_products">
+    <div  class="text-center fw-bolder mt-5 mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);letter-spacing: 20px;"><h1>ORIENT</h1></div>
+      <div class="container pb-3">
+      <div class="row" id="productListing_orient">
+  </div>
+  </div>
+    </section>
+    <!-- productlisting end-->
+
+    <!-- footer start -->
+<footer class="footer mt-5 bg-dark" style="color: white;">
+  <div class="container-fluid"> 
+   <div class="row pt-5"> 
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">About Us</h4> 
+      <p style="text-align: justify;">Welcome to Cosy Airconditioner – your trusted destination for premium air conditioning solutions.
+       We offer a wide range of top-quality,
+       energy-efficient AC units designed to keep you cool and comfortable all year round.
+       Enjoy expert advice, unbeatable prices, and reliable customer service at Cosy Airconditioner!
+      </p> 
+  </div> 
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">Contact Us</h4> 
+      <ul class="list-unstyled text-center">
+        <li>Phone: +9922-22242-0</li>
+          <li>Email: cosyairconditoners@gmail.com</li> 
+          <li>Address: E-8-6 Suite 11.11 Megan Avenue 1, 189, Jln Tun Razak, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</li> 
+      </ul> 
+  </div> 
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">Follow Us</h4> 
+      <li class="list-inline-item justify-content-center d-flex pt-3">
+      <ul class="list-inline footer-links">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/login/">
+                <i id="socialicon" class="fab fa-facebook "></i> 
+          </a>  
+                 </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://twitter.com/i/flow/login">
+                       <i id="socialicon" class="fab fa-twitter "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.instagram.com/accounts/login/?hl=en"> 
+                       <i id="socialicon" class="fab fa-instagram "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.linkedin.com/login"> 
+                       <i id="socialicon" class="fab fa-linkedin "></i>
+                   </a> 
+                 </li> 
+             </ul> 
+         </div> 
+     </div> 
+     <hr> 
+     <div class="row"> 
+         <div class="col-sm-12 col-md-12 col-lg-12 text-center"> 
+             <p>&copy; 2024 [ COSY AIR CONDITIONERS ] All Rights Reserved</p> 
+         </div> 
+         
+     </div>
+ </div>
+</footer>
+         <!-- footer end -->
+         <script src="js/bootstrap.js"></script>
+         <script src="sorces.js"></script>
+    <script>
+      var product =[
+  [1,'The Hallmark of Elegance & Functionality','images/greeac1.jpg','Built-in WIFI Smartphone interface Quiet down to 19 dB(A) Multiple fan speeds Precise airflow control Swing louver control I-Feel function Remote & wired controller options',120000,'Gree'],
+  [2,'vireo r32 wall mount 2.5 Ton AC','images/greeac2.jpg','Auto Clean Dehumidification I-Feel functionality Self-diagnosis Multiple fan speeds Automatic voltage adaptation Low voltage start-up Swing louver control',150000,'Gree'],
+  [3,'The Future Of Environmental Efficiency','images/greeac3.jpg','4-Way discharge air Multiple fan speeds Swing louver control Automatic voltage adaption',310000,'Gree'],
+  [4,'Inverter Series HSU-19VRA22','images/haierac1.jpg','UVC Sterilization WiFi Control WiFi Control Smart Clean Smart Clean',130000,'Haier'],
+  [5,'UV PLUS T2 INVERTER','images/haierac3.jpg','Power Input (W)510 -3500 Running Current (A)2.4 -15.5 Refrigerant R32 Air Circulation (m3/h)1510',250000,'Haier'],
+  [6,'Air Conditioner HSU-19VQC22','images/haierac2.png','UVC Sterilization WiFi Control WiFi Control Smart Clean Smart Clean',250000,'Haier'],
+  [7,'Excel 1.5 Ton Silver Inverter Split AC','images/dawlanceac1.webp','Inverter Mono Split Cooling Capacity(Btu/h) 18000 BTU/h Function Reversible',170000,'Dawlance'],
+  [8,'Enercon X 1 Ton Inverter Split AC','images/dawlanceac2.webp','AC Inverter Mono Split Cooling Capacity (Btu/h) 12500 BTU/h Function Reversible Self Cleaning Yes',142000,'Dawlance'],
+  [9,'Gallant 2 Ton Inverter Floor Standing AC','images/dawlanceac3.png','Gold Fin Yes Self Cleaning Yes',373000,'Dawlance'],
+  [10,'PEL InverterOn Jumbo Black','images/pelac1.webp','(H&C) Air Conditioner (1 Ton & 2 Ton Wifi Available',146000,'Pel'],
+  [11,'PEL InverterOn Turbo DC T3','images/pelac3.webp','12K Turbo DC Ultimate T3 Range Capacity Cooling 1004(100~1182)W Range Current Cooling 4.5(1.1~5.4) ARated Current 9.0 ARange Capacity Heating 925(240~1083) W',139000,'Pel'],
+  [12,'PEL Regal Air Conditioner','images/pelac2.webp','Regal (Heat & Cool) 2.0 Ton Rated Capacity Cooling 7100 Rated Running Current Cooling 14.5 W Maximum Current 19 A Rated Power Cooling 2500 W Maximum Power 4000 W',28400,'Pel'],
+  [13,'2 Ton Ultron SUPER eComfort Mirror Black DC Inverter','images/orientac3.webp','T3 tropicalized inverter Japanese PCB Kit Auto Pilot Optimized compressor drive Low voltage operation 70V',255000,'Orient'],
+  [14,'1 Ton Ultron MEGA eComfort DC Inverter','images/oreintac1.webp','T3 tropicalized inverter Japanese PCB Kit Auto Pilot Optimized compressor drive Low voltage operation 70V 100% pure copper',133000,'Orient'],
+  [15,'4 Ton ULTIMATE Silk White H/C','images/orientstandac.webp','on-inverter technology Energy efficient technology R410 Eco friendly refrigerant Heat & Cool 4D air flow',410000,'Orient']
+  ]
+  
+  var url = location.href;
+    var object = new URL(url);
+    var storecategory = object.searchParams.get("category")
+    
+  var brands =[];
+  for (var iterator of product){
+      if(brands.includes(iterator[5])){
+      }else{
+          brands.push(iterator[5])  
+    }
+}
+  var listing = "";
+  for (var list of brands) {
+      listing +=`
+                   <li><a id="color" class="dropdown-item" href="category.html?category=${list}">${list}</a></li>   
+          `
+  }
+  document.getElementById("productlisting").innerHTML = listing;
+
+  var category ="";
+  for (var show of product){
+     // show click category
+     if(storecategory == show[5]){
+        category += `
+         <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3 mb-4 d-flex justify-content-center">
+    <div class="card" style="width: 16rem;">
+        <img src="${show[2]}" class="card-img-top" alt="..." style="hight:100px;">
+            <div class="card-body">
+            <h6 class="card-title">${show[1]}</h6>
+              <p class="card-text fw-bold">Rs.${show[4]}</p>
+            <a id="bookbtn" href="detail.html?desc=${show[3]}&Product_ID=${show[0]}&Product_Name=${show[1]}&Product_Img=${show[2]}&Product_Price=${show[4]}"class="btn btn-dark rounded-pill d-flex justify-content-center">See Detail</a>
+            </div>
+        </div>
+    </div>
+        `
+    }
+  }
+  document.getElementById("category").innerHTML = category;
+  
+
+    </script>
+</body>
+</html>

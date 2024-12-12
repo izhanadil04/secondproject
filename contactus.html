@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+      <!-- Font Awesome -->
+      <link href= 
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>CONTACT US</title>
+    <style>
+      #Side-icon{ height: 4rem; font-size: 3rem; transition: transform 1.3s; }
+      #Side-icon:hover{ transform: rotateY(180deg); }
+      #Side-icons{ 
+        /* position: fixed; */
+        bottom: 300px;
+        right: 10px;
+        justify-content: end; display:flex;
+      }
+  </style>
+</head>
+<body>
+   <!-- go to top button -->
+   <button type="button" class="rounded-pill" onclick="topFunction()" id="top_btn">Top</button>
+   <!-- javascript code -->
+    <script>
+     var go_top = document.getElementById("top_btn");
+     window.onscroll = function() {scrollFunction()};
+     function scrollFunction(){
+       if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+         go_top.style.display = "block";
+       }else{
+         go_top.style.display = "none";
+       }
+     }
+     function topFunction(){
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+    </script>
+   <!-- javascript code -->
+   <!-- go to top button -->
+     <!-- navbar start -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <img id="logo" src="images/logo.png" alt="logo" width="100px" class="img-fluid"> <span id="second">COSY AIRCONDITIONERS</span>
+        
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            <li class="nav-item">
+              <a class="nav-link active fw-bolder ms-2" id="white" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" id="white" href="products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="white" class="nav-link dropdown-toggle fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                BRANDS
+              </a>
+              <ul class="dropdown-menu bg-dark round-2" aria-labelledby="navbarDropdown" id="productlisting">
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a id="white" class="nav-link fw-bolder" href="contactus.html"  aria-disabled="false">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a id="white" class="nav-link fw-bolder" href="about.html"  aria-disabled="false">ABOUT US</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="control me-2 rounded-pill" type="search" onclick="nonborder()" placeholder="Search..." aria-label="Search" id="search_input">
+            <button id="btnsearch" class="btn fw-bolder" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      
+    </nav>
+  <!-- navbar end -->
+
+   <!-- contact start -->
+   <div class="container">
+   <div  class="text-center fw-bolder mb-5 mt-5" style="letter-spacing: 20px; text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);"><h1>CONTACT US</h1></div>
+       <div class="contact-form">
+      
+            <form id="contact-form" style="box-shadow: 1px 1px 3px 1px rgb(131, 128, 128) inset; border-radius: 10px;padding: 30px;">
+               <label for="name" class="fw-bold">Name:</label>
+               <input style="box-shadow: 1px 1px 3px 1px rgb(131, 128, 128) inset;" type="text" id="name" name="name" class="rounded-pill form-control" >
+              <p id="fn_masg"></p>
+            <label for="email" class="fw-bold">Email:</label>
+             <input style="box-shadow: 1px 1px 3px 1px rgb(131, 128, 128) inset;" type="email" id="email" name="email" class="rounded-pill form-control" >
+             <p id="fe_masg"></p>
+        <label for="message" class="fw-bold">Message:</label>
+            <textarea style="box-shadow: 1px 1px 3px 1px rgb(131, 128, 128) inset;" id="message" name="message" rows="6"  class="round-3 form-control" ></textarea>
+           <div id="fbtndiv"><button id="formbtn" type="submit" class="btn btn-dark round-5 p-2 mt-3">SEND</button></div> 
+      </form>    
+  </div>
+    </div>
+              <!-- contact end -->
+
+              <!-- locaation info start-->
+              <div class="container map mt-5 mb-5">
+                <div id="bookbtn" style="letter-spacing: 15px; text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701); color: red; text-align: center;padding-bottom: 10px;"><h2>OUR LOCATION</h2></div>
+                <div class="row">
+              <div class="col-12">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0170064239123!2d67.07182317632422!3d24.86326874514341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1721510521929!5m2!1sen!2s" width="100%" height="450" style="border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  </div>
+              </div>
+           <!-- locaation info end-->
+
+           <!-- footer start -->
+<footer class="footer mt-5 bg-dark" style="color: white;">
+  <div class="container-fluid"> 
+   <div class="row pt-5"> 
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">About Us</h4> 
+      <p style="text-align: justify;">Welcome to Cosy Airconditioner – your trusted destination for premium air conditioning solutions.
+       We offer a wide range of top-quality,
+       energy-efficient AC units designed to keep you cool and comfortable all year round.
+       Enjoy expert advice, unbeatable prices, and reliable customer service at Cosy Airconditioner!
+      </p> 
+  </div> 
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">Contact Us</h4> 
+      <ul class="list-unstyled text-center">
+        <li>Phone: +9922-22242-0</li>
+          <li>Email: cosyairconditoners@gmail.com</li> 
+          <li>Address: E-8-6 Suite 11.11 Megan Avenue 1, 189, Jln Tun Razak, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</li> 
+      </ul> 
+  </div> 
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+      <h4 class="text-center">Follow Us</h4> 
+      <li class="list-inline-item justify-content-center d-flex pt-3">
+      <ul class="list-inline footer-links">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/login/">
+                <i id="socialicon" class="fab fa-facebook "></i> 
+          </a> 
+                 </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://twitter.com/i/flow/login">
+                       <i id="socialicon" class="fab fa-twitter "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.instagram.com/accounts/login/?hl=en"> 
+                       <i id="socialicon" class="fab fa-instagram "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.linkedin.com/login"> 
+                       <i id="socialicon" class="fab fa-linkedin "></i>
+                   </a> 
+                 </li> 
+             </ul> 
+         </div> 
+     </div> 
+     <hr> 
+     <div class="row"> 
+         <div class="col-sm-12 col-md-12 col-lg-12 text-center"> 
+             <p>&copy; 2024 [ COSY AIR CONDITIONERS ] All Rights Reserved</p> 
+         </div> 
+         
+     </div> 
+ </div> 
+</footer>  
+         <!-- footer end -->
+
+    <script>
+$(document).ready(function(){
+
+  $('#formbtn').click(function(e){
+    e.preventDefault();
+var name=$("#name").val();
+var email=$("#email").val();
+var message=$("#message").val();
+var collection="";
+  
+  if(name == ""){
+                $("#name").removeClass("is-valid")
+                $("#name").addClass("is-invalid")
+                collection += "name";
+                $("#fn_masg").html("Name feild empty")
+                    $("#fn_masg").css("color","red")
+            }else{
+                    $("#name").removeClass("is-invalid")
+                    $("#name").addClass("is-valid")
+                    collection += "";
+                    $("#fn_masg").html("")
+                    $("#fn_masg").css("color","green")
+            }
+            if(email === ""){
+            $("#email").removeClass("is-valid")
+                $("#email").addClass("is-invalid")
+                collection +="email";
+                $("#fe_masg").html("Email feild empty")
+                    $("#fe_masg").css("color","red")
+          }else{
+                    $("#email").removeClass("is-invalid")
+                    $("#email").addClass("is-valid")
+                    collection += "email";
+                    $("#fe_masg").html("")
+                    $("#fe_masg").css("color","green")
+          }
+          if(message ===""){
+                $("#message").removeClass("is-valid")
+                $("#message").addClass("is-invalid")
+                collection +="message";
+          }else{
+                $("#message").removeClass("is-invalid")
+                $("#message").addClass("is-valid")
+                collection =+ ""
+          }
+          if(collection == ""){
+            alert("Message send on Localstorage Successfully")
+           localStorage.setItem("name",name)
+           localStorage.setItem("email",email)
+           localStorage.setItem("message",message)
+          }else{
+            alert("Please Fill All Feilds")
+          }
+  })
+})
+
+    </script>
+  <script src="js/bootstrap.js"></script>
+    <script src="sorces.js"></script>
+    <script>
+      var product =[
+[1,'The Hallmark of Elegance & Functionality','images/greeac1.jpg','Built-in WIFI Smartphone interface Quiet down to 19 dB(A) Multiple fan speeds Precise airflow control Swing louver control I-Feel function Remote & wired controller options',120000,'Gree'],
+[2,'vireo r32 wall mount 2.5 Ton AC','images/greeac2.jpg','Auto Clean Dehumidification I-Feel functionality Self-diagnosis Multiple fan speeds Automatic voltage adaptation Low voltage start-up Swing louver control',150000,'Gree'],
+[3,'The Future Of Environmental Efficiency','images/greeac3.jpg','4-Way discharge air Multiple fan speeds Swing louver control Automatic voltage adaption',310000,'Gree'],
+[4,'Inverter Series HSU-19VRA22','images/haierac1.jpg','UVC Sterilization WiFi Control WiFi Control Smart Clean Smart Clean',130000,'Haier'],
+[5,'UV PLUS T2 INVERTER','images/haierac3.jpg','Power Input (W)510 -3500 Running Current (A)2.4 -15.5 Refrigerant R32 Air Circulation (m3/h)1510',250000,'Haier'],
+[6,'Air Conditioner HSU-19VQC22','images/haierac2.png','UVC Sterilization WiFi Control WiFi Control Smart Clean Smart Clean',250000,'Haier'],
+[7,'Excel 1.5 Ton Silver Inverter Split AC','images/dawlanceac1.webp','Inverter Mono Split Cooling Capacity(Btu/h) 18000 BTU/h Function Reversible',170000,'Dawlance'],
+[8,'Enercon X 1 Ton Inverter Split AC','images/dawlanceac2.webp','AC Inverter Mono Split Cooling Capacity (Btu/h) 12500 BTU/h Function Reversible Self Cleaning Yes',142000,'Dawlance'],
+[9,'Gallant 2 Ton Inverter Floor Standing AC','images/dawlanceac3.png','Gold Fin Yes Self Cleaning Yes',373000,'Dawlance'],
+[10,'PEL InverterOn Jumbo Black','images/pelac1.webp','(H&C) Air Conditioner (1 Ton & 2 Ton Wifi Available',146000,'Pel'],
+[11,'PEL InverterOn Turbo DC T3','images/pelac3.webp','12K Turbo DC Ultimate T3 Range Capacity Cooling 1004(100~1182)W Range Current Cooling 4.5(1.1~5.4) ARated Current 9.0 ARange Capacity Heating 925(240~1083) W',139000,'Pel'],
+[12,'PEL Regal Air Conditioner','images/pelac2.webp','Regal (Heat & Cool) 2.0 Ton Rated Capacity Cooling 7100 Rated Running Current Cooling 14.5 W Maximum Current 19 A Rated Power Cooling 2500 W Maximum Power 4000 W',28400,'Pel'],
+[13,'2 Ton Ultron SUPER eComfort Mirror Black DC Inverter','images/orientac3.webp','T3 tropicalized inverter Japanese PCB Kit Auto Pilot Optimized compressor drive Low voltage operation 70V',255000,'Orient'],
+[14,'1 Ton Ultron MEGA eComfort DC Inverter','images/oreintac1.webp','T3 tropicalized inverter Japanese PCB Kit Auto Pilot Optimized compressor drive Low voltage operation 70V 100% pure copper',133000,'Orient'],
+[15,'4 Ton ULTIMATE Silk White H/C','images/orientstandac.webp','on-inverter technology Energy efficient technology R410 Eco friendly refrigerant Heat & Cool 4D air flow',410000,'Orient']
+]
+
+
+
+var brands =[];
+for (var iterator of product){
+  if(brands.includes(iterator[5])){
+  }else{
+      brands.push(iterator[5])
+  }
+}
+
+
+var listing = "";
+for (var list of brands) {
+  listing +=`
+               <li><a id="color" class="dropdown-item" href="category.html?category=${list}">${list}</a></li>   
+      `
+}
+document.getElementById("productlisting").innerHTML = listing
+
+
+    </script>
+</body>
+</html>
